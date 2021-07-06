@@ -1,8 +1,8 @@
 # garage-thing
 
-A "thing" implementation for a Raspberry Pi based [WebThings](https://webthings.io/) system which operates a garage door with a relay and shows the door's open state with a reed switch, both connected to the Pi's GPIO ports.
+A WebThing for a Raspberry Pi based [WebThings](https://webthings.io/) system which operates a garage door with a relay and shows the door's open state with a reed switch sensor, both connected to the Pi's GPIO ports.
 
-The garage-thing is a Java based service running in the background. It is added the WebThings Gateway running on the same device (or another device on the same network) and operated through the Gateway.
+The garage-thing is a Java based service running in the background. It is added on to the WebThings Gateway running on the same device (or another device on the same network) and operated through the Gateway.
 
 ## Installation on a Raspberry Pi device
 
@@ -15,3 +15,6 @@ The garage-thing is a Java based service running in the background. It is added 
 * Copy `service/garagething.service` to directory `/etc/systemd/system`
 * Run `sudo systemctl enable garagething.service`
 * Run `sudo systemctl start garagething.service`
+
+## TODO
+* Describe GPIO pin configuration for relay and sensor
