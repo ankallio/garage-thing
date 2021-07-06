@@ -1,0 +1,11 @@
+[Unit]
+Description=GarageThing service
+# After=syslog.target
+After=mozilla-iot-gateway.service
+
+[Service]
+User=pi
+ExecStart=/usr/bin/java -jar /opt/garagething/garagething.jar
+
+[Install]
+WantedBy=multi-user.target
